@@ -1,5 +1,3 @@
-# Capstone Project Outline
-
 ## Cycle 1: Basic programs using datatypes, operators, and control statements in Java
 - [ ] Write a Java program to check whether a string is palindrome or not.
 - [ ] Write a Java program to multiply two matrices.
