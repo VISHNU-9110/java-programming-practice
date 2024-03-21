@@ -1,32 +1,21 @@
+import java.util.Scanner;
 
-import java.io.*;
-import java.util.*;
-
-class StrPalindrome {
-    public static void main(String args[]) {
-        Scanner s = new Scanner(System.in);
-        String str;
-        System.out.print("Enter the Sting : ");
-        str = s.nextLine();
-        checkIfPalindrome(str);
-    }
-
-    private static void checkIfPalindrome(String s) {
-        char str[];
-        int size = s.length();
-        str = new char[size];
-        s.getChars(0, size, str, 0);
-        char rev[] = new char[size];
-        for (int i = 0, j = size - 1; i < size; i++, j--) {
-            rev[i] = str[j];
-        }
-        String r = new String(rev);
-        if (s.equals(r)) {
-            System.out.println("+---------------------------------+");
-            System.out.println("String : " + r + " Is a Palindrome");
+public class StrPalindrome {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String input = scanner.nextLine();
+        
+        if (isPalindrome(input)) {
+            System.out.println("The string is a palindrome.");
         } else {
-            System.out.println("+---------------------------------+");
-            System.out.println("String : " + r + " Is not a Palindrome");
+            System.out.println("The string is not a palindrome.");
         }
+    }
+    
+    public static boolean isPalindrome(String str) {
+        StringBuilder reversed = new StringBuilder(str);
+        reversed.reverse(); 
+        return str.equals(reversed.toString());
     }
 }

@@ -25,24 +25,20 @@ public class TransposeOfMatrix {
         }
 
         System.out.println("Original Matrix:");
-        System.out.println("+---------------------------------+");
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++)
                 System.out.print("\t" + matrix[i][j]);
 
             System.out.println();
         }
-        System.out.println("+---------------------------------+");
 
         System.out.println("Transpose Matrix:");
-        System.out.println("+---------------------------------+");
         for (int i = 0; i < c; i++) {
             for (int j = 0; j < r; j++) {
                 System.out.print("\t" + transpose[i][j]);
             }
             System.out.println();
         }
-        System.out.println("+---------------------------------+");
 
     }
 }

@@ -25,8 +25,6 @@ public class SecondSmallestEle {
             array[i] = scan.nextInt();
         }
         array = sort(array, n);
-        System.out.println("+-------------------------------------+");
         System.out.println("Second Smallest elemet is " + array[1]);
-        System.out.println("+-------------------------------------+");
     }
 }

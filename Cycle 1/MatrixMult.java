@@ -3,7 +3,7 @@ import java.io.*;
 
 public class MatrixMult {
     private static void disp(int r, int c, int matrix[][]) {
-        System.out.println("+---------------------------------+");
+
         for (int i = 0; i < r; i++) {
             System.out.print("|\t");
             for (int j = 0; j < c; j++) {
@@ -11,13 +11,12 @@ public class MatrixMult {
             }
             System.out.println("|");
         }
-        System.out.println("+---------------------------------+");
     }
 
     private static int[][] read(int r, int c) {
         int[][] matrix = new int[r][c];
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter the values: ");
+        System.out.println("Enter the values: ");
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
                 matrix[i][j] = s.nextInt();
